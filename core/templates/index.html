@@ -1,11 +1,26 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDEX</title>
-</head>
-<body>
-    <h1>INDEX</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+  {% include 'hero.html' %}
+
+  {% include 'servicos.html' %}
+
+  {% include 'about.html' %}
+
+  {% include 'features.html' %}
+
+  {% include 'team.html' %}
+
+  {% include 'prices.html' %}
+
+  {% include 'testimonial.html' %}
+
+  {% include 'call_to_action.html' %}
+
+  {% include 'contact.html' %}
+
+  {% include 'footer.html' %}
+
+
+{% endblock  %}
